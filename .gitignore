@@ -32,3 +32,6 @@ coverage.xml
 # MacOS and system files
 .DS_Store
 Thumbs.db
+# Ignore all pycache everywhere
+**/__pycache__/
+*.pyc
