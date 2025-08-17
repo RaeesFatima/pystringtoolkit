@@ -58,3 +58,20 @@ print(to_snake_case("Hello World!"))  # hello_world
  You can find the contribution guide here to contribute in this project.
 [Contribution Guide](CONTRIBUTING.md) 
 Thanks
+
+## 📚 Documentation
+
+Full documentation is available here 👉 [PyStringToolkit Docs](https://pystringtoolkit-documentation.readthedocs.io/en/latest/)
+
+The docs include:
+- Installation guide
+- Usage patterns & best practices
+
+## 👩‍💻 Contributors
+
+We value our contributors!  
+
+All the people who help improve **PyStringToolkit** are listed in [CONTRIBUTORS.md](CONTRIBUTORS.md).  
+
+A huge thanks to everyone — whether it’s code, docs, tests, or ideas 🙌
+
