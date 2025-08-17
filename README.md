@@ -20,7 +20,7 @@ Transform strings between common naming conventions:
 - `to_upper_case()` → Converts all letters to uppercase
 - `to_lower_case()` → Converts all letters to lowercase
 - `to_title_case()` → Capitalizes the first letter of each word
-
+- `to_alternating_case()` →  alternates uppercase and lowercase characters in a string
 ### 🧹 Text Cleaning Functions
 Remove unwanted characters and normalize formatting:
 
@@ -35,6 +35,9 @@ Helpful tools for generating and formatting text:
 
 - `slugify()` → Converts text into URL-friendly slugs (`"Hello World!" → "hello-world"`)
 - `random_string(length)` → Generates a random alphanumeric string of a given length
+
+### 📧 Email Validation
+The `is_email()` → function validates if a string is a properly formatted email address
 
 ---
 

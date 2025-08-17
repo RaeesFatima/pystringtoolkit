@@ -25,3 +25,11 @@ def to_camel_case(str):
 
 def to_title_case(str):
     return str.title()
+def to_alternating_case(str):
+    altrnated_case = []
+    for i, char in enumerate(str):
+        if i % 2 == 0:
+            altrnated_case.append(char.upper())
+        else:
+            altrnated_case.append(char.lower())
+    return ''.join(altrnated_case)
