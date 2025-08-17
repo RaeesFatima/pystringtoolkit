@@ -1,8 +1,7 @@
-from pystringtoolkit.validators import is_email
 from pystringutils import (to_snake_case, to_upper_case, to_lower_case,
                            to_kebab_case, to_pascal_case, to_camel_case, to_title_case, remove_punctuation,
-                           remove_whitespaces,remove_extra_spaces, truncate, contains_only_alpha,slugify, random_string)
-from pystringutils.cases import to_alternating_case
+                           remove_whitespaces,remove_extra_spaces, truncate, contains_only_alpha,slugify, random_string,
+                           to_alternating_case)
 
 #cases
 def test_to_snake_case():
@@ -50,10 +49,6 @@ def test_random_string():
     print(random_string(10))
     assert random_string(10)
 
-def test_is_email():
-    print(is_email("test@example.com"))
-    assert is_email("test@example.com") == True
-    
 def test_alternating_case():
     print(to_alternating_case("hello"))
     assert to_alternating_case("hello") == "HeLlO"

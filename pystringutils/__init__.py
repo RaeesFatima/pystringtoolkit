@@ -6,6 +6,7 @@ from .cases import to_kebab_case
 from .cases import to_pascal_case
 from .cases import to_camel_case
 from .cases import to_title_case
+from .cases import to_alternating_case
 #cleaners
 from .cleaners import remove_punctuation
 from .cleaners import remove_whitespaces

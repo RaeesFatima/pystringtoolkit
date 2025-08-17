@@ -1,5 +1,5 @@
 import pytest
-from pystringtoolkit.validators import is_email
+from pystringutils.validators import is_email
 
 def test_is_email():
     # Valid email addresses

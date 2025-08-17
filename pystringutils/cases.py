@@ -25,6 +25,7 @@ def to_camel_case(str):
 
 def to_title_case(str):
     return str.title()
+
 def to_alternating_case(str):
     altrnated_case = []
     for i, char in enumerate(str):
