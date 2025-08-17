@@ -59,7 +59,7 @@ print(to_snake_case("Hello World!"))  # hello_world
 [Contribution Guide](CONTRIBUTING.md) 
 Thanks
 
-## 📚 Documentation
+## Documentation
 
 Full documentation is available here 👉 [PyStringToolkit Docs](https://pystringtoolkit-documentation.readthedocs.io/en/latest/)
 
@@ -67,7 +67,7 @@ The docs include:
 - Installation guide
 - Usage patterns & best practices
 
-## 👩‍💻 Contributors
+## Contributors
 
 We value our contributors!  
 
