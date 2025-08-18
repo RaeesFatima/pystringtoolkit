@@ -39,7 +39,7 @@ def test_truncate():
     assert truncate("this is a test",4) == "this..."
 
 def test_contains_only_alpha():
-    assert contains_only_alpha("this123") == False
+    assert not contains_only_alpha("this123")
 
 #generators
 def test_slugify():
@@ -52,3 +52,4 @@ def test_random_string():
 def test_alternating_case():
     print(to_alternating_case("hello"))
     assert to_alternating_case("hello") == "HeLlO"
+
