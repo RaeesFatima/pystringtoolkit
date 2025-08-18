@@ -13,6 +13,8 @@ from .cleaners import remove_whitespaces
 from .cleaners import remove_extra_spaces
 from .cleaners import truncate
 from .cleaners import contains_only_alpha
+#validators
+from .validators import is_email
 #generators
 from .generators import slugify
 from .generators import random_string
