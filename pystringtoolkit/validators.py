@@ -1,6 +1,9 @@
+import re
 def is_email():
     pass
 
+def isalpha(s:str)->bool:
+     return re.fullmatch(r"[A-Za-z]+", s) is not None
 
 def is_numeric(string):
     """
