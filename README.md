@@ -49,7 +49,6 @@ Install the latest version via pip:
 pip install pystringtoolkit
 ```
 ## Example
-
 ```python
 from pystringtoolkit import to_snake_case
 

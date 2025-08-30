@@ -52,4 +52,3 @@ def test_random_string():
 def test_alternating_case():
     print(to_alternating_case("hello"))
     assert to_alternating_case("hello") == "HeLlO"
-
