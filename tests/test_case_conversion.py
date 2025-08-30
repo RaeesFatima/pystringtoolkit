@@ -1,4 +1,4 @@
-from pystringutils.case_conversion import invert_cases
+from pystringtoolkit.case_conversion import invert_cases
 #Testing the inverse case
 def test_invert_cases():
     assert invert_cases("Hello") == "hELLO"

@@ -1,7 +1,7 @@
-from pystringutils import (to_snake_case, to_upper_case, to_lower_case,
-                           to_kebab_case, to_pascal_case, to_camel_case, to_title_case, remove_punctuation,
-                           remove_whitespaces,remove_extra_spaces, truncate, contains_only_alpha,slugify, random_string,
-                           to_alternating_case)
+from pystringtoolkit import (to_snake_case, to_upper_case, to_lower_case,
+                             to_kebab_case, to_pascal_case, to_camel_case, to_title_case, remove_punctuation,
+                             remove_whitespaces, remove_extra_spaces, truncate, contains_only_alpha, slugify, random_string,
+                             to_alternating_case)
 
 #cases
 def test_to_snake_case():
