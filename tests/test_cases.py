@@ -1,7 +1,7 @@
-from pystringutils import (to_snake_case, to_upper_case, to_lower_case,
-                           to_kebab_case, to_pascal_case, to_camel_case, to_title_case, remove_punctuation,
-                           remove_whitespaces,remove_extra_spaces, truncate, contains_only_alpha,slugify, random_string,
-                           to_alternating_case)
+from pystringtoolkit import (to_snake_case, to_upper_case, to_lower_case,
+                             to_kebab_case, to_pascal_case, to_camel_case, to_title_case, remove_punctuation,
+                             remove_whitespaces, remove_extra_spaces, truncate, contains_only_alpha, slugify, random_string,
+                             to_alternating_case)
 
 #cases
 def test_to_snake_case():
@@ -39,7 +39,7 @@ def test_truncate():
     assert truncate("this is a test",4) == "this..."
 
 def test_contains_only_alpha():
-    assert contains_only_alpha("this123") == False
+    assert not contains_only_alpha("this123")
 
 #generators
 def test_slugify():

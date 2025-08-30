@@ -50,12 +50,9 @@ pip install pystringtoolkit
 ```
 ## Example
 ```python
-from pystringutils import to_snake_case
-from pystringutils.validators import is_email
+from pystringtoolkit import to_snake_case
 
 print(to_snake_case("Hello World!"))  # hello_world
-print(is_email("user@example.com"))   # True
-print(is_email("not-an-email"))       # False
 ```
 ## Contribution guide
  You can find the contribution guide here to contribute in this project.
@@ -77,3 +74,4 @@ We value our contributors!
 All the people who help improve **PyStringToolkit** are listed in [CONTRIBUTORS.md](CONTRIBUTORS.md).  
 
 A huge thanks to everyone — whether it’s code, docs, tests, or ideas 🙌
+
