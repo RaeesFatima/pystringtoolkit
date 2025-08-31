@@ -36,8 +36,8 @@ Helpful tools for generating and formatting text:
 - `slugify()` → Converts text into URL-friendly slugs (`"Hello World!" → "hello-world"`)
 - `random_string(length)` → Generates a random alphanumeric string of a given length
 
-### 📧 Email Validation
-The `is_email()` → function validates if a string is a properly formatted email address
+### 📧 Validators
+- `is_email()` → function validates if a string is a properly formatted email address
 
 ---
 
@@ -49,6 +49,7 @@ Install the latest version via pip:
 pip install pystringtoolkit
 ```
 ## Example
+
 ```python
 from pystringtoolkit import to_snake_case
 
