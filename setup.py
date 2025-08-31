@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pystringtoolkit",
-    version="0.1.1",
+    version="0.1.3",
     author="Raees Fatima",
     description="Handy string utilities for Python",
     long_description=open("README.md", encoding="utf-8").read(),

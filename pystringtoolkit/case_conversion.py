@@ -1,4 +1,4 @@
-def invert_cases(str):
+def invert_cases(str:str)->str:
     """
        Invert the case of each character in a string.
        Lowercase characters become uppercase, and uppercase characters become lowercase.

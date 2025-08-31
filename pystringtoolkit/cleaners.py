@@ -1,6 +1,6 @@
 import re
 
-def remove_punctuation(str):
+def remove_punctuation(str:str)->str:
     """
         Remove all punctuation from a string, keeping only alphanumeric characters and whitespace.
 
@@ -16,7 +16,7 @@ def remove_punctuation(str):
         """
     return re.sub(r'[^\w\s]','',str)
 
-def remove_whitespaces(str):
+def remove_whitespaces(str:str)->str:
     """
        Remove all whitespace characters from a string (spaces, tabs, newlines).
 
@@ -32,7 +32,7 @@ def remove_whitespaces(str):
        """
     return re.sub(r'[\s]','',str)
 
-def remove_extra_spaces(str):
+def remove_extra_spaces(str:str)->str:
     """
         Remove leading and trailing spaces from a string.
 
@@ -48,7 +48,7 @@ def remove_extra_spaces(str):
         """
     return str.strip()
 
-def truncate(str,length):
+def truncate(str,length:str)->str:
     """
         Truncate a string to a given length and append an ellipsis ("...").
         If the string is shorter than or equal to the given length, it is returned unchanged.
@@ -66,7 +66,7 @@ def truncate(str,length):
         """
     return str[:length] + '...'
 
-def contains_only_alpha(str):
+def contains_only_alpha(str:str)->bool:
     """
         Check if a string contains only alphabetic characters and spaces.
 

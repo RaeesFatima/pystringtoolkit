@@ -1,11 +1,47 @@
 import re
-def is_email():
-    pass
+def is_email(text:str)->bool:
+    """
+    Validate whether a string is a valid email address.
+
+    Uses a simple regex to check common email formats.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        bool: True if the input is a valid email address, False otherwise.
+
+    Example:
+        >>> is_email("test@example.com")
+        True
+        >>> is_email("not-an-email")
+        False
+    """
+    if not text:
+        return False
+
+    pattern = r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+    return re.match(pattern, text) is not None
 
 def isalpha(s:str)->bool:
-     return re.fullmatch(r"[A-Za-z]+", s) is not None
+    """
+        Check if a string contains only alphabetic characters (A–Z, a–z).
 
-def is_numeric(string):
+        Args:
+            s (str): The input string.
+
+        Returns:
+            bool: True if the string contains only alphabetic characters, False otherwise.
+
+        Example:
+            >>> isalpha("Hello")
+            True
+            >>> isalpha("Hello123")
+            False
+    """
+    return re.fullmatch(r"[A-Za-z]+", s) is not None
+
+def is_numeric(string:str|int|float)->bool:
     """
     Check if a value can be interpreted as a numeric value.
     
