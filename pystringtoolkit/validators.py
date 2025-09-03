@@ -93,3 +93,45 @@ def is_numeric(string:str|int|float)->bool:
         return True
     except ValueError:
         return False
+    
+
+def is_palindrome(text: str) -> bool:
+    """
+    Check if a string is a palindrome (reads the same forwards and backwards), ignoring case and non-alphanumeric characters.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        bool: True if the string is a palindrome, False otherwise.
+
+    Example:
+        >>> is_palindrome("A man, a plan, a canal, Panama")
+        True
+        >>> is_palindrome("Hello")
+        False
+    """
+    cleaned = ''.join(c.lower() for c in text if c.isalnum())
+    return cleaned == cleaned[::-1]
+
+
+def are_anagrams(text1: str, text2: str) -> bool:
+    """
+    Check if two strings are anagrams of each other (contain the same letters in a different order), ignoring case and spaces.
+
+    Args:
+        text1 (str): The first input string.
+        text2 (str): The second input string.
+
+    Returns:
+        bool: True if the strings are anagrams, False otherwise.
+
+    Example:
+        >>> are_anagrams("Listen", "Silent")
+        True
+        >>> are_anagrams("Hello", "World")
+        False
+    """
+    from collections import Counter
+    return Counter(text1.lower().replace(" ", "")) == Counter(text2.lower().replace(" ", ""))
+
