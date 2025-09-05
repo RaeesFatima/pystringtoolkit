@@ -18,6 +18,8 @@ from .cleaners import contains_only_alpha
 from .validators import is_email
 from .validators import is_numeric
 from .validators import isalpha
+from .validators import is_palindrome
+
 #generators
 from .generators import slugify
 from .generators import random_string

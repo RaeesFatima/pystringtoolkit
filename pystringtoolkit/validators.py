@@ -61,6 +61,22 @@ def is_numeric(string:str|int|float)->bool:
         >>> is_numeric("abc")
         False
     """
+    
+def is_palindrome(text: str) -> bool:
+    """
+    Check if the given text is a palindrome.
+    Ignores case, spaces, and punctuation.
+
+    Args:
+        text (str): Input string
+
+    Returns:
+        bool: True if palindrome, False otherwise
+    """
+    import re
+    cleaned = re.sub(r'[^a-zA-Z0-9]', '', text).lower()
+    return cleaned == cleaned[::-1]
+
     # Explicitly reject booleans (which are int subclasses in Python)
     if isinstance(string, bool):
         return False
