@@ -38,6 +38,7 @@ Helpful tools for generating and formatting text:
 
 ### 📧 Validators
 - `is_email()` → function validates if a string is a properly formatted email address
+- `is_palindrome()` → function if a string is a palindrome (ignores case, spaces, and punctuation)
 
 ---
 
