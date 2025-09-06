@@ -83,3 +83,40 @@ def contains_only_alpha(str:str)->bool:
             False
         """
     return bool(re.fullmatch(r'[A-Za-z\s]+',str))
+
+
+def remove_vowels(text: str) -> str:
+    """
+    Remove all vowels from a string.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        str: A string with all vowels removed.
+
+    Example:
+        >>> remove_vowels("Hello World")
+        'Hll Wrld'
+    """
+    vowels = "aeiouAEIOU"
+    return ''.join(c for c in text if c not in vowels)
+
+
+def remove_consonants(text: str) -> str:
+    """
+    Remove all consonants from a string, keeping only vowels and non-alphabetic characters.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        str: A string containing only vowels and non-alphabetic characters.
+
+    Example:
+        >>> remove_consonants("Hello World")
+        'eo o'
+    """
+    vowels = "aeiouAEIOU"
+    return ''.join(c for c in text if not c.isalpha() or c in vowels)
+

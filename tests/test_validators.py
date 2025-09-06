@@ -1,5 +1,6 @@
 import pytest
 from pystringtoolkit.validators import is_email, is_numeric
+from pystringtoolkit.validators import is_palindrome, are_anagrams
 
 def test_is_email():
     # Valid email addresses
@@ -123,3 +124,12 @@ def test_is_numeric():
     
     assert is_numeric(NumericStr()) is True    # Object with numeric __str__
     assert is_numeric(BadStr()) is False       # Object that raises in __str__
+
+
+def test_is_palindrome():
+    assert is_palindrome("A man, a plan, a canal, Panama")
+    assert not is_palindrome("Hello")
+
+def test_are_anagrams():
+    assert are_anagrams("Listen", "Silent")
+    assert not are_anagrams("Hello", "World")
