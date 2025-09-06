@@ -34,3 +34,20 @@ def random_string(length:int)->str:
         """
     str=''.join(random.choices(string.ascii_letters+string.digits,k=length))
     return str
+
+
+def reverse_string(text: str) -> str:
+    """
+    Reverse the given string.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        str: The reversed string.
+
+    Example:
+        >>> reverse_string("Hello")
+        'olleH'
+    """
+    return text[::-1]

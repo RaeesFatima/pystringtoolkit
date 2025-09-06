@@ -14,12 +14,20 @@ from .cleaners import remove_whitespaces
 from .cleaners import remove_extra_spaces
 from .cleaners import truncate
 from .cleaners import contains_only_alpha
+from .cleaners import remove_vowels
+from .cleaners import remove_consonants
 #validators
 from .validators import is_email
 from .validators import is_numeric
 from .validators import isalpha
 from .validators import is_palindrome
-
+from .validators import are_anagrams
 #generators
 from .generators import slugify
 from .generators import random_string
+from .generators import reverse_string
+# counting
+from .counting import char_frequency
+from .counting import most_common_char
+from .counting import word_count
+from .counting import unique_words
