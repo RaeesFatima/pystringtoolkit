@@ -16,6 +16,14 @@ def test_is_email():
     assert is_email("user@.com") is False
     assert is_email("user@domain.") is False
 
+from pystringtoolkit import is_palindrome
+
+def test_is_palindrome():
+    assert is_palindrome("Racecar")
+    assert is_palindrome("No lemon, no melon")
+    assert not is_palindrome("Hello")
+    assert is_palindrome("12321")
+    assert not is_palindrome("Python")
 
 def test_is_numeric():
     # Valid numerics

@@ -29,6 +29,7 @@ Remove unwanted characters and normalize formatting:
 - `remove_extra_spaces()` → Reduces multiple spaces to a single space
 - `truncate(length)` → Cuts off text after a specified length, adding ellipsis
 - `contains_only_alpha()` → Checks if the string contains only alphabetic characters
+- `strip_html_tags()` -> remove any HTML tags in a string
 
 ### 🔧 String Generation Tools
 Helpful tools for generating and formatting text:

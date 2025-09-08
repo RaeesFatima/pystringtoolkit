@@ -16,6 +16,7 @@ from .cleaners import truncate
 from .cleaners import contains_only_alpha
 from .cleaners import remove_vowels
 from .cleaners import remove_consonants
+from .cleaners import strip_html_tags
 #validators
 from .validators import is_email
 from .validators import is_numeric

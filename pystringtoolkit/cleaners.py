@@ -120,3 +120,15 @@ def remove_consonants(text: str) -> str:
     vowels = "aeiouAEIOU"
     return ''.join(c for c in text if not c.isalpha() or c in vowels)
 
+def strip_html_tags(text: str) -> str:
+    """
+    Remove HTML tags from a given string.
+
+    Args:
+        text (str): The input string containing HTML.
+
+    Returns:
+        str: The cleaned string without HTML tags.
+    """
+    clean = re.compile(r'<.*?>')
+    return re.sub(clean, '', text)
