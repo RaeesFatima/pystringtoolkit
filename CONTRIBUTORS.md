@@ -31,7 +31,20 @@ mukesh
 ivansmarbun
 
 <a href="https://github.com/vishalpanwar416">
-  <img src="https://avatars.githubusercontent.com/vishalpanwar416" width="60px" style="border-radius:50%" alt="@ivansmarbun"/>
+  <img src="https://avatars.githubusercontent.com/vishalpanwar416" width="60px" style="border-radius:50%" alt="@vishalpanwar416"/>
 </a>
 
 Vishal Panwar
+
+<a href="https://github.com/KabirKhan1512">
+  <img src="https://avatars.githubusercontent.com/KabirKhan1512" width="60px" style="border-radius:50%" alt="@KabirKhan1512"/>
+</a>
+
+Muhammad Kabir ud din
+
+<a href="https://github.com/TabarakAllahKhan">
+  <img src="https://avatars.githubusercontent.com/TabarakAllahKhan" width="60px" style="border-radius:50%" alt="@TabarakAllahKhan"/>
+</a>
+
+Tabarak Allah Khan
+
