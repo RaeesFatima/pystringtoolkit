@@ -61,55 +61,6 @@ def is_numeric(string:str|int|float)->bool:
         >>> is_numeric("abc")
         False
     """
-    
-def is_palindrome(text: str) -> bool:
-    """
-    Check if the given text is a palindrome.
-    Ignores case, spaces, and punctuation.
-
-    Args:
-        text (str): Input string
-
-    Returns:
-        bool: True if palindrome, False otherwise
-    """
-    import re
-    cleaned = re.sub(r'[^a-zA-Z0-9]', '', text).lower()
-    return cleaned == cleaned[::-1]
-
-    # Explicitly reject booleans (which are int subclasses in Python)
-    if isinstance(string, bool):
-        return False
-
-    # Accept native numeric types
-    if isinstance(string, (int, float)):
-        return True
-    
-    # Reject None and container types early
-    if string is None or isinstance(string, (list, dict, set, tuple)):
-        return False
-    
-    # Convert to string and strip whitespace
-    try:
-        string_value = str(string).strip()
-    except Exception:
-        # Handle objects that might raise in __str__
-        return False
-        
-    if not string_value:
-        return False
-    
-    # Fast path for simple positive integers
-    if string_value.isdigit():
-        return True
-    
-    # Comprehensive validation for all other numeric formats
-    try:
-        float(string_value)
-        return True
-    except ValueError:
-        return False
-    
 
 def is_palindrome(text: str) -> bool:
     """
@@ -150,4 +101,3 @@ def are_anagrams(text1: str, text2: str) -> bool:
     """
     from collections import Counter
     return Counter(text1.lower().replace(" ", "")) == Counter(text2.lower().replace(" ", ""))
-
