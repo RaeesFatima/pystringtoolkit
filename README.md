@@ -65,7 +65,7 @@ Thanks
 
 ## Documentation
 
-Full documentation is available here 👉 [PyStringToolkit Docs](https://pystringtoolkit-documentation.readthedocs.io/en/latest/)
+Full documentation is available here 👉 [PyStringToolkit Docs](https://pystringtoolkit-documentation.readthedocs.io/en/main/getting-started/)
 
 The docs include:
 - Installation guide
